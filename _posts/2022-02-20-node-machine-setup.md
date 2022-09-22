@@ -1,5 +1,9 @@
-# Home Server: Bitcoin Node Hardware Setup
-
+---
+layout: post
+title:  "Home Server 1: Bitcoin Node Hardware Setup"
+date:   2022-09-20 21:31:23 -0400
+categories: bitcoin server
+---
 I decided it was finally time to setup a Bitcoin node of my very own. I debated a long time about
 getting a Raspberry Pi or buying a NUC-like device. Finally, I decided to repurpose an old laptop
 I have, and I think that I made the right decision.
@@ -51,4 +55,4 @@ absolutely necessary to use ethernet, but I would suggest it.
 It is currently tucked nearly underneath our dresser. I put a piece of electrical tape over the blue
 LED indicator and it is upside down for airlow.
 
-![node placement](assets/2022-02-20/IMG_1954.jpeg)
+![node placement](/assets/2022-02-20/IMG_1954.jpeg)
