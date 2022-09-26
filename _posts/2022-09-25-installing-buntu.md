@@ -12,52 +12,52 @@ After that is finished, reboot the computer and go into the BIOS menu. This is v
 
 When the USB drive boots, you will be greeted by this screen:
 
-![first screen](../assets/2022-09-25/001.png)
+![first screen](/assets/2022-09-25/001.png)
 
 Select `Try or Install Ubuntu Server` to proceed to the next stage, where you will select your language and keyboard layout.
 
-![select language](../assets/2022-09-25/002.png)
-![select layout](../assets/2022-09-25/003.png)
+![select language](/assets/2022-09-25/002.png)
+![select layout](/assets/2022-09-25/003.png)
 
 Install Ubuntu Server (not the minimized version).
 
-![install type](../assets/2022-09-25/004.png)
+![install type](/assets/2022-09-25/004.png)
 
 You will be prompted to select your network interface. By default here, you will see your ethernet device, which should be plugged in directly to your home router or modem. Please take note of your local IP address here, this is how you will connect to your machine over the your home network.
 
-![network interface](../assets/2022-09-25/005.png)
+![network interface](/assets/2022-09-25/005.png)
 
 If you have a proxy, configure it now. I do not, so I left it blank.
 
-![proxy](../assets/2022-09-25/006.png)
+![proxy](/assets/2022-09-25/006.png)
 
 Leave the mirror address as the default.
 
-![mirror](../assets/2022-09-25/007.png)
+![mirror](/assets/2022-09-25/007.png)
 
 Create your hard disk where you will install, but also de-select LVM as it is not needed and will add unnecesasry overhead.
 
-![disable LVM](../assets/2022-09-25/008.png)
+![disable LVM](/assets/2022-09-25/008.png)
 
 Let Ubuntu handle formatting your drive partitions with the default options. You should see a lot more space here, as these screenshots were taken in a VM with limited space.
 
-![setup partitions](../assets/2022-09-25/009.png)
+![setup partitions](/assets/2022-09-25/009.png)
 
 Setup your default user and password. This is how you will identify yourself to your PC when you log in over the network.
 
-![user setup](../assets/2022-09-25/010.png)
+![user setup](/assets/2022-09-25/010.png)
 
 Make sure to select to install OpenSSH server, or you will not be able to log into your server over the network.
 
-![install openssh](../assets/2022-09-25/011.png)
+![install openssh](/assets/2022-09-25/011.png)
 
 There's no need to modify any of the default installed software. Skip right on past this screen.
 
-![installed software](../assets/2022-09-25/012.png)
+![installed software](/assets/2022-09-25/012.png)
 
 Finally the isntall will begin. It should only take a few minutes.
 
-![install commenced](../assets/2022-09-25/013.png)
+![install commenced](/assets/2022-09-25/013.png)
 
 When you're finished, you will be prompted to remove the install medium (USB drive) and reboot the machine. Once you do, you will hopefully be greeted with the login page for the user you setup!
 
