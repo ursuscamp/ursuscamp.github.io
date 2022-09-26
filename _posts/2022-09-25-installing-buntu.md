@@ -61,6 +61,6 @@ Finally the isntall will begin. It should only take a few minutes.
 
 When you're finished, you will be prompted to remove the install medium (USB drive) and reboot the machine. Once you do, you will hopefully be greeted with the login page for the user you setup!
 
-Links:
+## Links:
 
-https://ubuntu.com/tutorials/install-ubuntu-server#1-overview
+[Installing Ubuntu Server](https://ubuntu.com/tutorials/install-ubuntu-server#1-overview)
