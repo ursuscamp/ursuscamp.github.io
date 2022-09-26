@@ -55,4 +55,4 @@ absolutely necessary to use ethernet, but I would suggest it.
 It is currently tucked nearly underneath our dresser. I put a piece of electrical tape over the blue
 LED indicator and it is upside down for airlow.
 
-![node placement](/assets/2022-02-20/IMG_1954.jpeg)
+![node placement](/assets/2022-09-20/IMG_1954.jpeg)
