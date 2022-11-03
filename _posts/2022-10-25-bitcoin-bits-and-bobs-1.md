@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Bitcoin Bits and Bobs: Block Header Parsing"
+title:  "Bitcoin Bits and Bobs 1: Block Header Parsing"
 date:   2022-10-25 23:30:25 -0400
 categories: bitcoin rust
 ---

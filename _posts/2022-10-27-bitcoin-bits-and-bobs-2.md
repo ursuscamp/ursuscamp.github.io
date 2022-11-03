@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Bitcoin Bits and Bobs: Merkle Trees"
+title:  "Bitcoin Bits and Bobs 2: Merkle Trees"
 date: 2022-10-27 22:36:09 -0400
 categories: bitcoin rust
 ---
