@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Home Server 4: Transmission with VPN"
+date:   2022-12-19 22:35:30 -0500
+categories: home-server self-hosted
+---
+
 Why stick with just Bitcoin? Let's run some other stuff on this machine, too. Let's get a BitTorrent server running! But, we don't want our ISP snooping on us, so let's do it within a VPN. However, VPNs can play havoc with local LAN services, so we will also need to setup a container so that only our BitTorrent client is operating within the VPN.
 
 How do we do that? Why, Linux network namespaces! We could also use Docker, but I'm going the barebones route this time.
@@ -7,7 +14,7 @@ First, some housekeeping: I will be using [Mullvad](https://mullvad.net) for VPN
 First step is to install is to download the [wireguard config](https://mullvad.net/en/account/#/wireguard-config/) from Mullvad. Then scp (SSH file copy) to your machine.
 
 ```bash
-scp mullvad-config.zip user@host:/home/user/mullvad-wireguard.zip
+scp mullvad-config.zip YOUR-USERNAME@host:/home/YOUR-USERNAME/mullvad-wireguard.zip
 ```
 
 Then SSH back into your server and install some software and copy the wireguard configs.
@@ -142,7 +149,7 @@ Add the following lines and save:
 ```
 [Service]
 NetworkNamespacePath=/run/netns/wireguard
-User=satoshi
+User=YOUR-USERNAME
 ```
 
 Now let's start the services: `sudo systemctl restart mullvad transmission-daemon`
@@ -164,6 +171,8 @@ stream {
 
 Finally, you should be able to connect to your transmission web UI on another machine on your
 network like this: `http://your-machine:9091`
+
+If you get a message about rpc whitelists, stop the transmission-deamon service, then edit `~/.config/transmission-daemon/settings.json` and set the `rpc-whitelist` config options to `false` to disable rpc-whitelist. Make sure to set the `rpc-user` and `rpc-password` attribute, and change `rpc-authentication-required` to `true`.
 
 
 Links:
