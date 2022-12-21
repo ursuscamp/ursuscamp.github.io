@@ -123,8 +123,8 @@ stream {
                 listen 50002 ssl;
                 proxy_pass electrs;
 
-                ssl_certificate /home/user/.electrs/cert.crt;
-                ssl_certificate_key /home/user/.electrs/cert.key;
+                ssl_certificate /home/user/.electrs/server.crt;
+                ssl_certificate_key /home/user/.electrs/server.key;
                 ssl_session_cache shared:SSL:1m;
                 ssl_session_timeout 4h;
                 ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3;

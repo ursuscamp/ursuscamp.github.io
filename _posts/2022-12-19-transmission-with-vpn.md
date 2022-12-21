@@ -150,6 +150,7 @@ Add the following lines and save:
 [Service]
 NetworkNamespacePath=/run/netns/wireguard
 User=YOUR-USERNAME
+BindReadOnlyPaths=/etc/netns/wireguard/resolv.conf:/etc/resolv.conf:norbind
 ```
 
 Now let's start the services: `sudo systemctl restart mullvad transmission-daemon`
