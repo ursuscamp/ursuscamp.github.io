@@ -177,6 +177,6 @@ If you get a message about rpc whitelists, stop the transmission-deamon service,
 
 Links:
 
-https://volatilesystems.org/wireguard-in-a-separate-linux-network-namespace.html
-https://askubuntu.com/questions/659267/how-do-i-override-or-configure-systemd-services
-https://www.redhat.com/sysadmin/net-namespaces
+[Wireguard in a linux namespace](https://volatilesystems.org/wireguard-in-a-separate-linux-network-namespace.html)
+[Overriding systemd services](https://askubuntu.com/questions/659267/how-do-i-override-or-configure-systemd-services)
+[Redhat: network namespaces](https://www.redhat.com/sysadmin/net-namespaces)
