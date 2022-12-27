@@ -9,6 +9,7 @@ github_username:  ursuscamp
 domain: ursuscamp.github.io
 
 # Build settings
+include: [".well-known"]
 theme: minima
 plugins:
   - jekyll-feed
