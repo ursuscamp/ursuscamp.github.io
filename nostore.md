@@ -10,7 +10,7 @@ A [NIP-07][nip07] compatible browser extension for Safari.
 
 <img src="assets/nostore/nostore1.png" width="40%">
 
-1. Install the Nostore app. Safari web extensions come with a "wrapper" application.
+1. Install the Nostore app. Safari web extensions must come wrapped in an application.
 2. After the wrapper app has been installed, activate the extension under Safari settings.
 3. Once it is activated, you should see the Nostore logo in the your Safari toolbar on the Mac. On iOS, you will click the "aA" menu in the URL bar, and the Nostore extension will be located in that menu.
 4. Clicking on the extension will open a menu that allows you to add your private keys and manage your profiles. Selecting a profile makes it the current "active" profile for any nostr sites.
