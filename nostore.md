@@ -6,7 +6,13 @@ A [NIP-07][nip07] compatible browser extension for Safari.
 
 [nip07]: https://github.com/nostr-protocol/nips/blob/master/07.md
 
-# Usage
+## Tutorial
+
+<video controls width="250">
+  <source src="https://nostr.build/av/6416av.MOV">
+</video>
+
+## Usage
 
 <img src="assets/nostore/nostore1.png" width="40%">
 
