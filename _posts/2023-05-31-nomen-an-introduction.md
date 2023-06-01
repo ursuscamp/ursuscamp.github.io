@@ -5,8 +5,7 @@ date:   2023-05-31 23:04:33 -0400
 categories: bitcoin nostr
 ---
 
-_This has also been cross-posted to Nostr: https://snort.social/e/note15xq9u92kr525rygqzyglm99qs7cejy7udruhmzw22jflh0sy0dzqs3m2rk
-_
+_This has also been cross-posted to Nostr: https://snort.social/e/note15xq9u92kr525rygqzyglm99qs7cejy7udruhmzw22jflh0sy0dzqs3m2rk_
 
 I wanted to share a little bit about Nomen, a new protocol that establishes rules for creating globally unique, human readable identifiers, similar to domain names but without a central planner like ICANN.
 
