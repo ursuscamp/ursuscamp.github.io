@@ -1,5 +1,9 @@
-# Sentinel Chains: A Novel Two-Way Peg
-
+---
+layout: post
+title:  "Sentinel Chains: A Novel Two-Way Peg"
+date:   2023-08-10 10:57:00 -0400
+categories: bitcoin sidechain proposal 2wp peg
+---
 ## Introduction
 
 I have had some thoughts recently regarding sidechains with two-way pegs, which is inspired partly by the recent Twitter discourse (read: bickering) over Drivechains. Two-way pegs for sidechains are a kind of Holy Grail, and like all Holy Grails, difficult (or seemingly impossible) to achieve. One way pegs are already very possible by burning Bitcoin in an OP_RETURN output, and including in the OP_RETURN data some kind of anchor to the sidechain, establishing the coins being moved.
