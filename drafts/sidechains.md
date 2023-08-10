@@ -8,7 +8,7 @@ This is easy to conceive and easy to understand. The only issue is that since co
 
 This brings us back to the problem of two-way pegs. Ideally, you could move the Bitcoin back and forth in some fashion between side chain and main chain, so that the peg is naturally maintained. To some degree, Bitcoin full nodes need to be aware of the sidechain's existence. They must track it to make sure that peg-outs happening on the Bitcoin main chain are valid peg-outs and not filthy lies. Some proposals for this have existed in the past, the most "production-ready" of these being Drivechains. They are generally softfork proposals directly in Bitcoin Core.
 
-But what if we could do sidechains that have two-way pegs _and_ we could do it without any code changes to Bitcoin Core at all? Let me tell you all about a crazy idea I have: Sentinel chains.
+But what if we could make sidechains that have two-way pegs _and_ we could do it without any code changes to Bitcoin Core at all? Let me tell you all about a crazy idea I have: Sentinel chains.
 
 ## The Idea
 
