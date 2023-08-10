@@ -2,7 +2,7 @@
 layout: post
 title:  "Sentinel Chains: A Novel Two-Way Peg"
 date:   2023-08-10 10:57:00 -0400
-categories: bitcoin sidechain proposal 2wp peg
+categories: bitcoin
 ---
 ## Introduction
 
