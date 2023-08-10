@@ -14,7 +14,7 @@ But what if we could make sidechains that have two-way pegs _and_ we could do it
 
 A Sentinel chain is a sidechain that, to put it simply, relies a decentralized web of trusted watchtowers (the sentinels) to make sure that illegal peg-outs do not occur. So, how might this work?
 
-It could likely work in many potential ways that I am not not even aware, but here is one way I could envision it occurring:
+It could likely work in many potential ways that I have not even considered, but here is one way I could envision it occurring:
 
 Pegging in could work by paying to an address that is known as that Sentinel chain's address. That address represent a script that anyone can pay from, according to Bitcon's consensus rules. That transaction might also include an OP_RETURN whose data represents an address on the Sentinel chain to pay to after peg-in.
 
