@@ -13,3 +13,6 @@ include: [".well-known", "experiments"]
 theme: minima
 plugins:
   - jekyll-feed
+
+markdown: kramdown
+highlighter: rouge
