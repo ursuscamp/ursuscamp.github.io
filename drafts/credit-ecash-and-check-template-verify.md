@@ -21,9 +21,9 @@ While I remain hopeful and enthusiastic about Cashu, it is custodial and as such
 
 Credit ecash, as laid out by moonsettler, is an ecash in the sense of Cashu: satoshi-denominated blinded tokens issued by a mint. In this case, the tokens are non-custodial in nature. I suggest reading the paper a few times to grok the concept, but the basics work like this:
 
-Two parties, myself and an [LSP](https://guide.bolt.fun/guide/lsp), create a 2-of-2 multisig output with collateral provided by myself. The LSP issues ecash in the amount equivalent to the collateral. I can use the ecash to make Lightning Network payments, just as Cashu tokens. Every so often, the tokens expire and I must turn in the tokens to the mint for a fresh set, and if I have spent more than I have receied, I can make a Lightning payment to make up the difference.
+Two parties, myself and an [LSP](https://guide.bolt.fun/guide/lsp), create a 2-of-2 multisig output with collateral provided by myself. The LSP issues ecash in the amount equivalent to the collateral. I can use the ecash to make Lightning Network payments, just as Cashu tokens. Every so often, the tokens expire and I must turn in the tokens to the mint for a fresh set, and if I have a balance less than the locked capital, I can make a Lightning payment to make up the difference.
 
-At no point does the LSP have a custodial hold on my Bitcoin. The ecash tokens act as credit extended to me by the LSP. They cannot rug me and take my Bitcoin because it is locked in a 2-of-2 multisig. In the event of a disagreement, we can send the UTXO to arbitration to decide how much Bitcoin belongs to which party.
+At no point does the LSP have a custodial hold on my Bitcoin. The ecash tokens act as credit extended to me by the LSP. They cannot rug me and take my Bitcoin because it is locked in a 2-of-2 multisig. In the event of a disagreement, we can send the UTXO to arbitration to decide how much Bitcoin belongs to which party. The arbitration transaction is signed by both parties before the transaction is even broadcast, which means that neither side can hold the other out of arbitration.
 
 ## Q&A
 
@@ -44,9 +44,9 @@ So what does this have to do with CTV? Well, I think this system could play very
 
 CTV offers a simple scaling solution called [Congestion Control](https://utxos.org/uses/scaling/). The typical example use case for these are when exchanges create batch withdrawal transactions in a CTV tree rather than a normal large batch transaction. This allow the exchange the commit a UTXO to a output which is small in vbytes but which also guarantees that it can be unrolled over time as the fees ebb and flow. The nice thing about this is that your receipt of Bitcoin is confirmed as soon as the CTV output confirms, even if the UTXO isn't spendable yet in the UTXO set. Some refer to this as as a vUTXO (virtual UTXO).
 
-The problem with such a virtual UTXO, while it is secure becuase it is confirmed, it is not spendable until it is unrolled. What if in the future due to high fees, it might take a very long time for the trees to unroll. Maybe even... years? That's a problem, for sure. But, also, maybe it's not.
+The problem with such a virtual UTXO, while it is secure because it is confirmed, it is not spendable until it is unrolled. What if in the future due to high fees, it might take a very long time for the trees to unroll. Maybe even... years? That's a problem, for sure. But, also, maybe it's not.
 
-One option is for the user to specify the output address as a [cold storage Lightning channel](https://utxos.org/uses/batch-channels/), which can be revealed to a channel partner at a later time when convenient for the opener. This allows a one-way spend of these funds before the UTXO is on-chain.
+One option is for the user to specify the output address as a [cold storage Lightning channel](https://utxos.org/uses/batch-channels/) (helpful X thread with adorable visuals can be found [here](https://twitter.com/OwenKemeys/status/1741575353716326835)), which can be revealed to a channel partner at a later time when convenient for the opener. This allows a one-way spend of these funds before the UTXO is on-chain.
 
 But perhaps another option would be to open them to an LSP as credit ecash collateral. Here are benefits:
 
@@ -55,7 +55,11 @@ But perhaps another option would be to open them to an LSP as credit ecash colla
 * Flexible liquidity, including __easy__ inbound liquidity.
 * Send and receive privacy are superior to normal Lightning channel payments.
 
-Even if the channel takes years to unroll, you get all of the benefits of batched channels with far less liquidity headaches. While complicated and featureful off-chain Lightning channel protocols may offer _slightly_ better trust assumptions, the flexibility of the concept is exciting enough to keep me interested in further research.
+Even if the channel takes years to unroll, you get all of the benefits of batched channels with far less liquidity headaches. If cold channels are one way as some have said, then once a channel in a CTV leaf is spent, it is done and cannot be used anymore without cut-through. An ecash account has no such limitations! As long as the liquidity is confirmed, it can be used forever without channel updates.
+
+While complicated and featureful off-chain Lightning channel protocols may offer _slightly_ better trust assumptions, the flexibility of the concept is exciting enough to keep me interested in further research.
+
+Of course, this post doesn't even begin to explore the benefits you might get from credit ecash mixed with covenant pools. Perhaps another day.
 
 ## Sources
 
