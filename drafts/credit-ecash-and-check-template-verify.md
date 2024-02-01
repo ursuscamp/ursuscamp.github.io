@@ -7,7 +7,7 @@ categories: bitcoin
 
 ## Check Your Templates
 
-For the better part of the last year, following the publishing of the [Enigma paper](https://app.sigle.io/polydeuces.id.stx/bo-iHio5_4iTlvWwXwZ9l) by [polyd](https://twitter.com/Polyd_), I have been interested in and researching [CheckTemplateVerify](https://github.com/bitcoin/bips/blob/master/bip-0119.mediawiki) (`OP_CTV`).
+For the better part of the last year, after the publication of the [Enigma paper](https://app.sigle.io/polydeuces.id.stx/bo-iHio5_4iTlvWwXwZ9l) by [polyd](https://twitter.com/Polyd_), I have been interested in and researching [CheckTemplateVerify](https://github.com/bitcoin/bips/blob/master/bip-0119.mediawiki) (`OP_CTV`).
 
 `OP_CTV` is a Bitcoin Script enhancement that allows a Bitcoin transaction to lock itself to only be spent to the next specific output. This is a very restricted form of a [__covenant__](https://bitcoinops.org/en/topics/covenants/) smart contract. `OP_CTV` in particular commits to all of the outputs of the next transaction that spends that Bitcoin UTXO. Those outputs can include another CTV. Thus, a tree of transaction can be formed, where a Bitcoin UTXO slowly gets split over time as the whole tree unrolls on chain. There are many potential applications here for off-chain scaling with Lightning. For example, [timeout trees](https://bitcoinmagazine.com/technical/timeout-trees-a-solution-to-scaling-lightning-network-lsps) are a promising proposal based on `OP_CTV`.
 
@@ -33,7 +33,7 @@ __Q: How do the mints make money?__<br>
 _A: They can make money on transaction fees, but also on interest charged to users who do not wish to immediately pay the difference at the beginning of a new epoch._
 
 __Q: Since my Bitcoin is locked into a multisig, how much extra liquidity is required for the LSP to hold for making payments?__<br>
-_A: Probably a significant percentage of locked Bitcoin. (Author: I haven't done the math, but personally I would be surprised if it was more than 100% of the locked Bitcoin, just because of the liquidity difficulties associated with Lightning channel management)._
+_A: Probably a significant percentage of locked Bitcoin. (Author: I haven't done the math, but personally I would not be surprised if it was more than 100% of the locked Bitcoin, just because of the liquidity difficulties associated with Lightning channel management)._
 
 __Q: What about cases where you receive more than you spend?__<br>
 _A: Because of the private nature of ecash, the mint does not know which accounts are in a state of having a balance greather than their locked collateral, which means there is no incentive to rug the users in that regard. (Author: nevertheless, some more paranoid users will no doubt wish to move excessive funds to a different account or different LSP via the Lightning Network.)_
@@ -44,7 +44,7 @@ So what does this have to do with CTV? Well, I think this system could play very
 
 CTV offers a simple scaling solution called [Congestion Control](https://utxos.org/uses/scaling/). The typical example use case for these are when exchanges create batch withdrawal transactions in a CTV tree rather than a normal large batch transaction. This allow the exchange the commit a UTXO to a output which is small in vbytes but which also guarantees that it can be unrolled over time as the fees ebb and flow. The nice thing about this is that your receipt of Bitcoin is confirmed as soon as the CTV output confirms, even if the UTXO isn't spendable yet in the UTXO set. Some refer to this as as a vUTXO (virtual UTXO).
 
-The problem with such a virtual UTXO, while it is secure because it is confirmed, it is not spendable until it is unrolled. What if in the future due to high fees, it might take a very long time for the trees to unroll. Maybe even... years? That's a problem, for sure. But, also, maybe it's not.
+The issue with such a virtual UTXO is that, while it is secure once confirmed, it remains unspendable until it is unrolled. What if in the future due to high fees, it might take a very long time for the trees to unroll. Maybe even... years? That's a problem, for sure. But, also, maybe it's not.
 
 One option is for the user to specify the output address as a [cold storage Lightning channel](https://utxos.org/uses/batch-channels/) (helpful X thread with adorable visuals can be found [here](https://twitter.com/OwenKemeys/status/1741575353716326835)), which can be revealed to a channel partner at a later time when convenient for the opener. This allows a one-way spend of these funds before the UTXO is on-chain.
 
