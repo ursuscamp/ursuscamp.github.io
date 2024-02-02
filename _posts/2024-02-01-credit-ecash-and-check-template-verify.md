@@ -61,7 +61,7 @@ Even if the channel takes years to unroll, you get all of the benefits of batche
 
 While complicated and featureful off-chain Lightning channel protocols may offer _slightly_ better trust assumptions, the flexibility of the concept is exciting enough to keep me interested in further research.
 
-All of this pretty much assumes that we get CTV-only activated. However it is highly likely that CTV will be activated with other op codes such as [OP_CSFS](https://github.com/reardencode/bips/blob/csfs/bip-csfs.mediawiki). These extra features will likely enable better NICs such as LN-Symmetry channels. See [here](https://delvingbitcoin.org/t/lnhance-bips-and-implementation/376/6?u=moonsettler) for more info on that.
+All of this pretty much assumes that we get CTV-only activated. However it is highly likely that CTV will be activated with other op codes such as [`OP_CSFS`](https://github.com/reardencode/bips/blob/csfs/bip-csfs.mediawiki). These extra features will likely enable better NICs such as LN-Symmetry channels. See [here](https://delvingbitcoin.org/t/lnhance-bips-and-implementation/376/6?u=moonsettler) for more info on that.
 
 However, if those LN-Symmetry channels are __still__ unidirectional, there is still a place in there for credit ecash for that reason alone! Of course, this post doesn't even begin to explore the benefits you might get from credit ecash mixed with covenant pools. Perhaps another day.
 
