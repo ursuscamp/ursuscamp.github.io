@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Credit Ecash and CheckTemplateVerify"
+title:  "Credit Ecash + CheckTemplateVerify = 🧡"
 date: 2024-01-24 23:26:38 -0500
 categories: bitcoin
 ---
