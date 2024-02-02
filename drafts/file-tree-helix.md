@@ -24,12 +24,12 @@ The above are the bare minimum required to have a useful setup in the terminal f
 * [Bat](https://github.com/sharkdp/bat): A `cat` replacement. Alias to cat!
 * [Duf](https://github.com/muesli/duf): A `df` replacement. Shows free space.
 * [Dust](https://github.com/bootandy/dust): Shows a pretty tree of the folders that are using the most space on your machine.
-* fzf: A fuzzy finder, useful for many things.
-* glow: A pretty terminal markdown renderer.
-* httpie: An ergonomic `curl` replacement.
-* jq: A JSON query machine.
-* lsd: Fancy `ls` replacement. Alias to ls!
-* ripgrep: A better (best) `grep`.
-* sd: A simple, no-frills `sed` substitute.
-* tealdeer: A `man` substitutes which shows your simple, useful examples rather than full manuals.
-* xplr: A rad terminal file explorer, nice and customizable with low effort.
+* [Fzf](https://github.com/junegunn/fzf): A fuzzy finder, useful for many things.
+* [Glow](https://github.com/charmbracelet/glow): A pretty terminal markdown renderer.
+* [Httpie](https://httpie.io/cli): An ergonomic `curl` replacement.
+* [jq](https://github.com/jqlang/jq): A JSON query machine.
+* [Lsd](https://github.com/lsd-rs/lsd): Fancy `ls` replacement. Alias to ls!
+* [Ripgrep](https://github.com/BurntSushi/ripgrep): A better (best) `grep`.
+* [Sd](https://github.com/chmln/sd): A simple, no-frills `sed` substitute.
+* [Tealdeer](https://github.com/dbrgn/tealdeer): A `man` substitutes which shows you simple, useful examples rather than full manuals.
+* [Xplr](https://xplr.dev): A rad terminal file explorer, nice and customizable with low effort.
