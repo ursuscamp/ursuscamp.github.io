@@ -5,7 +5,7 @@ date: 2024-02-01 21:57:14 -0500
 categories: bitcoin
 ---
 
-_I want to think moonsettler for not only writing the ecash proposal that inspired this but also providing much feedback on the final article and talking with me about this subject at length._
+_I want to thank moonsettler for not only writing the ecash proposal that inspired this but also providing much feedback on the final article and talking with me about this subject at length._
 
 ## Check Your Templates
 
