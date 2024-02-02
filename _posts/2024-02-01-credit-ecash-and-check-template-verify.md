@@ -67,18 +67,18 @@ However, if those LN-Symmetry channels are __still__ unidirectional, there is st
 
 ## Sources
 
-* https://app.sigle.io/polydeuces.id.stx/bo-iHio5_4iTlvWwXwZ9l
-* https://bitcoinmagazine.com/technical/how-ctv-can-help-scale-bitcoin
-* https://bitcoinmagazine.com/technical/timeout-trees-a-solution-to-scaling-lightning-network-lsps
-* https://utxos.org/uses/scaling/
-* https://twitter.com/OwenKemeys/status/1741575353716326835
-* https://gist.github.com/moonsettler/42b588fa97a1da3ac0adea0dd16dadf2
-* https://cashu.space
-* https://github.com/cashubtc/nuts
-* https://github.com/bitcoin/bips/blob/master/bip-0119.mediawiki
-* https://github.com/ursuscamp/ctv
-* https://github.com/ursuscamp/cash-test
-* https://bitcoinops.org/en/topics/covenants/
-* https://github.com/bitcoin/bitcoin/pull/29198
-* https://github.com/reardencode/bips/blob/csfs/bip-csfs.mediawiki
-* https://delvingbitcoin.org/t/lnhance-bips-and-implementation/376/6?u=moonsettler
+* <https://app.sigle.io/polydeuces.id.stx/bo-iHio5_4iTlvWwXwZ9l>
+* <https://bitcoinmagazine.com/technical/how-ctv-can-help-scale-bitcoin>
+* <https://bitcoinmagazine.com/technical/timeout-trees-a-solution-to-scaling-lightning-network-lsps>
+* <https://utxos.org/uses/scaling/>
+* <https://twitter.com/OwenKemeys/status/1741575353716326835>
+* <https://gist.github.com/moonsettler/42b588fa97a1da3ac0adea0dd16dadf2>
+* <https://cashu.space>
+* <https://github.com/cashubtc/nuts>
+* <https://github.com/bitcoin/bips/blob/master/bip-0119.mediawiki>
+* <https://github.com/ursuscamp/ctv>
+* <https://github.com/ursuscamp/cash-test>
+* <https://bitcoinops.org/en/topics/covenants/>
+* <https://github.com/bitcoin/bitcoin/pull/29198>
+* <https://github.com/reardencode/bips/blob/csfs/bip-csfs.mediawiki>
+* <https://delvingbitcoin.org/t/lnhance-bips-and-implementation/376/6?u=moonsettler>
