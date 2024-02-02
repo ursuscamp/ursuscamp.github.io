@@ -80,5 +80,5 @@ However, if those LN-Symmetry channels are __still__ unidirectional, there is st
 * https://github.com/ursuscamp/cash-test
 * https://bitcoinops.org/en/topics/covenants/
 * https://github.com/bitcoin/bitcoin/pull/29198
-* https://delvingbitcoin.org/t/lnhance-bips-and-implementation/376/6?u=moonsettler
+* https://github.com/reardencode/bips/blob/csfs/bip-csfs.mediawiki
 * https://delvingbitcoin.org/t/lnhance-bips-and-implementation/376/6?u=moonsettler
