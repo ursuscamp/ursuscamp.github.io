@@ -19,7 +19,7 @@ For the better part of the last year, after the publication of the [Enigma paper
 
 However, another engaging topic that caught my attention last year was Ecash. Specifically, the [Cashu](https://cashu.space) variety of ecash, which a blinded custodial ecash protocol. I read the [NUTs](https://github.com/cashubtc/nuts) and implemented the [BDHKE cryptographic primitives](https://github.com/ursuscamp/cash-test) in Rust as a learning exercise. Cashu is a fun protocol, it's a lot like developing on a permissionless Wallet of Satoshi protocol.
 
-While I remain hopeful and enthusiastic about Cashu, it is custodial and as such has that trust trade-off from there is no escape. That is why I find [moonsettler's](https://twitter.com/4moonsettler) curious [proposal](https://gist.github.com/moonsettler/42b588fa97a1da3ac0adea0dd16dadf2) for a non-custodial **credit** ecash so interesting.
+While I remain hopeful and enthusiastic about Cashu, it is custodial and as such has that trust trade-off from which there is no escape. That is why I find [moonsettler's](https://twitter.com/4moonsettler) curious [proposal](https://gist.github.com/moonsettler/42b588fa97a1da3ac0adea0dd16dadf2) for a non-custodial **credit** ecash so interesting.
 
 Credit ecash, as laid out by moonsettler, is an ecash in the sense of Cashu: satoshi-denominated blinded tokens issued by a mint. In this case, the tokens are non-custodial in nature. I suggest reading the paper a few times to grok the concept, but the basics work like this:
 
@@ -35,7 +35,7 @@ __Q: How do the mints make money?__<br>
 _A: They can make money on transaction fees, but also on interest charged to users who do not wish to immediately pay the difference at the beginning of a new epoch._
 
 __Q: Since my Bitcoin is locked into a multisig, how much extra liquidity is required for the LSP to hold for making payments?__<br>
-_A: Probably a significant percentage of locked Bitcoin. You can probably expect people to use about 50% of their balance on average. Some will spend rarely, others will spend the whole balance._
+_A: Probably a significant percentage of locked Bitcoin. You can likely expect people to use about 50% of their balance on average. Some will spend rarely, others will spend the whole balance._
 
 __Q: What about cases where you receive more than you spend?__<br>
 _A: Because of the private nature of ecash, the mint does not know which accounts are in a state of having a balance greather than their locked collateral, which means there is no incentive to rug the users in that regard. (Author: nevertheless, some more paranoid users will no doubt wish to move excessive funds to a different account or different LSP via the Lightning Network.)_
@@ -61,9 +61,9 @@ Even if the channel takes years to unroll, you get all of the benefits of batche
 
 While complicated and featureful off-chain Lightning channel protocols may offer _slightly_ better trust assumptions, the flexibility of the concept is exciting enough to keep me interested in further research.
 
-All of this pretty much assumes that we get CTV-only activated. However it is highly likely that CTV will be activated with other op codes such as [`OP_CSFS`](https://github.com/reardencode/bips/blob/csfs/bip-csfs.mediawiki). These extra features will likely enable better NICs such as LN-Symmetry channels. See [here](https://delvingbitcoin.org/t/lnhance-bips-and-implementation/376/6?u=moonsettler) for more info on that.
+All of this pretty much assumes that we get CTV-only activated. However it is highly likely that CTV will be activated with other op codes such as [`OP_CSFS`](https://github.com/reardencode/bips/blob/csfs/bip-csfs.mediawiki). These extra features will enable better NICs such as [LN-Symmetry](https://bitcoinops.org/en/topics/eltoo/) channels. See [here](https://delvingbitcoin.org/t/lnhance-bips-and-implementation/376/6?u=moonsettler) for more info on that.
 
-However, if those LN-Symmetry channels are __still__ unidirectional, there is still a place in there for credit ecash for that reason alone! Of course, this post doesn't even begin to explore the benefits you might get from credit ecash mixed with covenant pools. Perhaps another day.
+However, if those LN-Symmetry channels are __still__ unidirectional, there may still a place in there for credit ecash for that reason alone. Of course, this post doesn't even begin to explore the benefits you might get from credit ecash mixed with covenant pools. Perhaps another day.
 
 ## Sources
 
@@ -82,3 +82,4 @@ However, if those LN-Symmetry channels are __still__ unidirectional, there is st
 * <https://github.com/bitcoin/bitcoin/pull/29198>
 * <https://github.com/reardencode/bips/blob/csfs/bip-csfs.mediawiki>
 * <https://delvingbitcoin.org/t/lnhance-bips-and-implementation/376/6?u=moonsettler>
+* <https://bitcoinops.org/en/topics/eltoo/> 
